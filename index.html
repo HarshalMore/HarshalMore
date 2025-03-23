@@ -34,52 +34,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <style>
-        .download-btn {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .download-btn:hover {
-            background-color: #45a049;
-        }
-
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            margin-top: 20px;
-        }
-
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
 </head>
 <body>
-    <div class="container">
-        <h1>My Resume</h1>
-        <p>Here is my resume displayed below. You can also download it by clicking the button.</p>
+  <h1>My Resume</h1>
 
-        <!-- Display the resume PDF using an iframe -->
-        <iframe src="https://drive.google.com/file/d/1iilSfR2GAxqjYlZHRQbBu188CXYzyyDl/preview" title="Resume"></iframe>
+  <!-- Google Drive File Preview -->
+  <iframe src="https://drive.google.com/file/d/1iilSfR2GAxqjYlZHRQbBu188CXYzyyDl/preview" width="100%" height="600px"></iframe>
 
-        <!-- Download button -->
-        <button class="download-btn" onclick="window.location.href='https://drive.google.com/file/d/1iilSfR2GAxqjYlZHRQbBu188CXYzyyDl&export=download'">Download My Resume</button>
-    </div>
+  <!-- Download Button -->
+  <a href="https://drive.google.com/uc?id=1iilSfR2GAxqjYlZHRQbBu188CXYzyyDl&export=download" target="_blank">
+    <button>Download My Resume</button>
+  </a>
 </body>
 </html>
-
-
